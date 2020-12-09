@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <!--CCS Designs + Import Fonts From Font.google.com-->
+        <style>
+            
+            @font-face{
+                font-family: 'Major Mono Display';
+                src: url(MajorMonoDisplayRegular.ttf) format("truetype" );
+            }
+            @font-face{
+                font-family: 'Montserrat', sans-serif;
+
+                src: url(Montserrat-Black.ttf) format("truetype" );
+
+            }
+            @font-face{
+                font-family: 'Sansita Swashed', cursive;
+                src: url(Montserrat-Black.ttf) format("truetype" );
+            }
+            body{
+                margin:0;
+                padding:0;
+                background-image: url(preview.jpeg);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+            }
+            @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}}
+            
+            
+            .header{
+                width: 100%;
+                height: 10%;
+                background-color: pink;
+                box-shadow: 0px 1px 5px black
+            }
+            .titleB{
+                float:left;
+                width: 72%;
+                height: 100%;   
+            }
+            .title{
+                font-size: 50px;
+                padding: 1%;
+                margin:0;
+                text-align: center;
+                font-family: 'Major Mono Display';
+            }
+            .navigation{
+                float:right;
+                width: 28%;
+            }
+            a{
+                font-family: 'Courier New', Courier, monospace;
+                text-decoration: none;
+                color: black;
+            }
+            .nav{
+                height: 100%;
+                font-size: 20px;
+                border: none;
+                background: 0;
+            }
+            .nav:after{
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                transition: width .3s;
+
+            }
+            .nav:hover::after{
+                width: 100%;
+                transition: width .3s;
+            }
+            .main{
+                width: 100%;
+                height: 87%;
+            }
+            .love{
+                Height: max-content;
+                width:100%;
+            }
+            .love p{
+                font-size: 35px;
+                padding: 0;
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                
+            }
+            .word{
+                font-family: 'Sansita Swashed', cursive;
+                font-size: 50px;
+                padding-left: 98px;
+                padding-right: 98px;
+                text-align: center;
+            }
+            .ref{
+                font-size: 30px;
+                text-align: center;
+                font-weight:bold;
+                font-style: italic;
+                font-family: 'JetBrains Mono';
+            }
+                @font-face{
+                font-family: 'JetBrains Mono';
+                src: url(JetBrainsMono-VariableFont_wght.ttf) format("truetype" );
+            
+            }
+            .back{
+                height: 10%;
+                width: 100px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                font-size: 20px;
+                border: none;
+                background: 0;
+                float:left;
+                background-color:tomato;
+            }
+            .next{
+                height: 10%;
+                width: 100px;
+                float:right;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                font-size: 20px;
+                border: none;
+                background: 0;
+                background-color:tomato;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- HEADER/TITLE/NAVIGATION-->
+        <div class="header">
+            <div class="titleB">
+                <p class="title">God's Will</p>
+            </div>
+            <div class="navigation">
+                <a href="Main.html"><button class="nav">Home</button></a>
+                <a href="love.html"><button class="nav">Categories</button></a>
+                <a href="Contact.html"><button class="nav">Contact</button></a>
+                <a href="About.html"><button class="nav">About</button></a>
+            </div>
+        </div>
+        <!--Bible Verses-->
+        <div class="Love">
+            <p>LOVE</p>
+        </div>
+        <div class="verses">
+            <p class="word">“For God so loved the world that he gave his only Son, that whoever believes in him should not perish but have eternal life.” </p>
+            <p class="ref">John 3:16</p>
+            <p class="word">“Whoever does not love does not know God, because God is love.”</p>
+            <p class="ref">1 John 4:8</p>
+            <p class="word">“Love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength.” </p>
+            <p class="ref">Mark 12:30</p>
+            <p class="word">“We love because he first loved us.”</p>
+            <p class="ref">1 John 4:19</p>
+            <p class="word">“But God shows his love for us in that while we were still sinners, Christ died for us.” </p>
+            <p class="ref">Romans 5:8</p>
+            <p class="word">“If you love me, you will keep my commandments.”</p>
+            <p class="ref">John 14:15</p>
+            <p class="word">“Humble yourselves, therefore, under the mighty hand of God so that at the proper time he may exalt you, casting all your anxieties on him, because he cares for you.”</p>
+            <p class="ref">1 Peter 5:6-7</p>
+            <p class="word">“ And we know that for those who love God all things work together for good, for those who are called according to his purpose.”</p>
+            <p class="ref">Romans 8:28</p> 
+            <p class="word">“Having purified your souls by your obedience to the truth for a sincere brotherly love, love one another earnestly from a pure heart.”</p>
+            <p class="ref">1 Peter 1:22</p>
+            <p class="word">“Love is patient and kind; love does not envy or boast; it is not arrogant.”</p>
+            <p class="ref">1 Corinthians 13:4</p>
+            
+        </div>
+        <!--BACK AND NEXT PAGE BUTTON-->
+        <div class="page">
+            <a href="forgiveness.html"><button class="back">BACK</button></a>
+            <a href="faith.html"><button class="next">NEXT</button></a>
+        </div>
+    </body>
+</html>

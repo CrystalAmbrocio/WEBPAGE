@@ -1,0 +1,188 @@
+<html>
+    <head>
+    <!--CCS Designs + Import Fonts From Font.google.com-->
+        <style>
+            
+            @font-face{
+                font-family: 'Major Mono Display';
+                src: url(MajorMonoDisplayRegular.ttf) format("truetype" );
+            }
+            @font-face{
+                font-family: 'Montserrat', sans-serif;
+
+                src: url(Montserrat-Black.ttf) format("truetype" );
+
+            }
+            @font-face{
+                font-family: 'Sansita Swashed', cursive;
+                src: url(Montserrat-Black.ttf) format("truetype" );
+            }
+            body{
+                margin:0;
+                padding:0;
+                background-image: url(preview.jpeg);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+            }
+            @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}}
+            
+            
+            .header{
+                width: 100%;
+                height: 10%;
+                background-color: pink;
+                box-shadow: 0px 1px 5px black
+            }
+            .titleB{
+                float:left;
+                width: 72%;
+                height: 100%;   
+            }
+            .title{
+                font-size: 50px;
+                padding: 1%;
+                margin:0;
+                text-align: center;
+                font-family: 'Major Mono Display';
+            }
+            .navigation{
+                float:right;
+                width: 28%;
+            }
+            a{
+                font-family: 'Courier New', Courier, monospace;
+                text-decoration: none;
+                color: black;
+            }
+            .nav{
+                height: 100%;
+                font-size: 20px;
+                border: none;
+                background: 0;
+            }
+            .nav:after{
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                transition: width .3s;
+
+            }
+            .nav:hover::after{
+                width: 100%;
+                transition: width .3s;
+            }
+            .main{
+                width: 100%;
+                height: 87%;
+            }
+            .hope{
+                Height: max-content;
+                width:100%;
+            }
+            .hope p{
+                font-size: 35px;
+                padding: 0;
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                
+            }
+            .word{
+                font-family: 'Sansita Swashed', cursive;
+                font-size: 50px;
+                padding-left: 98px;
+                padding-right: 98px;
+                text-align: center;
+            }
+            .ref{
+                font-size: 30px;
+                text-align: center;
+                font-weight:bold;
+                font-style: italic;
+                font-family: 'JetBrains Mono';
+            }
+                @font-face{
+                font-family: 'JetBrains Mono';
+                src: url(JetBrainsMono-VariableFont_wght.ttf) format("truetype" );
+            
+            }
+            .back{
+                height: 10%;
+                width: 100px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                font-size: 20px;
+                border: none;
+                background: 0;
+                float:left;
+                background-color:tomato;
+            }
+            .next{
+                height: 10%;
+                width: 100px;
+                float:right;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                font-size: 20px;
+                border: none;
+                background: 0;
+                background-color:tomato;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- HEADER/TITLE/NAVIGATION-->
+        <div class="header">
+            <div class="titleB">
+                <p class="title">God's Will</p>
+            </div>
+            <div class="navigation">
+                <a href="Main.html"><button class="nav">Home</button></a>
+                <a href="hope.html"><button class="nav">Categories</button></a>
+                <a href="Contact.html"><button class="nav">Contact</button></a>
+                <a href="About.html"><button class="nav">About</button></a>
+            </div>
+        </div>
+        <!--Bible Verses-->
+        <div class="hope">
+            <p>HOPE</p>
+        </div>
+        <div class="verses">
+            <p class="word">"Be strong and courageous. Do not fear or be in dread of them, for it is the Lord your God who goes with you. He will not leave you or forsake you." </p>
+            <p class="ref">Deuteronomy 31:6</p>
+            <p class="word">"Through him we have also obtained access by faith into this grace in which we stand, and we rejoice in hope of the glory of God." </p>
+            <p class="ref">Romans 5:1</p>
+            <p class="word">"And Jesus said to him, “If you can, All things are possible for one who believes.”</p>
+            <p class="ref">Mark 9:23</p>
+            <p class="word">"You are my hiding place and my shield; I hope in your word." </p>
+            <p class="ref">Psalm 119:114 </p>
+            <p class="word">"My soul longs for your salvation; I hope in your word." </p>
+            <p class="ref">Psalm 119:81 </p>
+            <p class="word">"But as for me, I will look to the Lord; I will wait for the God of my salvation; my God will hear me."  </p>
+            <p class="ref">Micah 7:7 </p>
+            <p class="word">"If in Christ we have hope in this life only, we are of all people most to be pitied."  </p>
+            <p class="ref">1 Corinthians 15:19 </p>
+            <p class="word">"For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope."  </p> </p>
+            <p class="ref">Jeremiah 29:11 </p>
+            <p class="word">"The hope of the righteous brings joy, but the expectation of the wicked will perish."  </p>
+            <p class="ref">Proverbs 10:28 </p>
+            <p class="word">"Therefore, preparing your minds for action, and being sober-minded, set your hope fully on the grace that will be brought to you at the revelation of Jesus Christ. " </p>
+            <p class="ref">1 Peter 1:13 </p>
+            
+        </div>
+        <!--BACK AND NEXT PAGE BUTTON-->
+        <div class="page">
+            <a href="faith.html"><button class="back">BACK</button></a>
+            <a href="life.html"><button class="next">NEXT</button></a>
+        </div>
+    </body>
+</html>

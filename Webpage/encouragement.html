@@ -1,0 +1,188 @@
+<html>
+    <head>
+    <!--CCS Designs + Import Fonts From Font.google.com-->
+        <style>
+            
+            @font-face{
+                font-family: 'Major Mono Display';
+                src: url(MajorMonoDisplayRegular.ttf) format("truetype" );
+            }
+            @font-face{
+                font-family: 'Montserrat', sans-serif;
+
+                src: url(Montserrat-Black.ttf) format("truetype" );
+
+            }
+            @font-face{
+                font-family: 'Sansita Swashed', cursive;
+                src: url(Montserrat-Black.ttf) format("truetype" );
+            }
+            body{
+                margin:0;
+                padding:0;
+                background-image: url(preview.jpeg);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+            }
+            @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}}
+            
+            
+            .header{
+                width: 100%;
+                height: 10%;
+                background-color: pink;
+                box-shadow: 0px 1px 5px black
+            }
+            .titleB{
+                float:left;
+                width: 72%;
+                height: 100%;   
+            }
+            .title{
+                font-size: 50px;
+                padding: 1%;
+                margin:0;
+                text-align: center;
+                font-family: 'Major Mono Display';
+            }
+            .navigation{
+                float:right;
+                width: 28%;
+            }
+            a{
+                font-family: 'Courier New', Courier, monospace;
+                text-decoration: none;
+                color: black;
+            }
+            .nav{
+                height: 100%;
+                font-size: 20px;
+                border: none;
+                background: 0;
+            }
+            .nav:after{
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                transition: width .3s;
+
+            }
+            .nav:hover::after{
+                width: 100%;
+                transition: width .3s;
+            }
+            .main{
+                width: 100%;
+                height: 87%;
+            }
+            .encouragement{
+                Height: max-content;
+                width:100%;
+            }
+            .encouragement p{
+                font-size: 35px;
+                padding: 0;
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                
+            }
+            .word{
+                font-family: 'Sansita Swashed', cursive;
+                font-size: 50px;
+                padding-left: 98px;
+                padding-right: 98px;
+                text-align: center;
+            }
+            .ref{
+                font-size: 30px;
+                text-align: center;
+                font-weight:bold;
+                font-style: italic;
+                font-family: 'JetBrains Mono';
+            }
+                @font-face{
+                font-family: 'JetBrains Mono';
+                src: url(JetBrainsMono-VariableFont_wght.ttf) format("truetype" );
+            
+            }
+            .back{
+                height: 10%;
+                width: 100px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                font-size: 20px;
+                border: none;
+                background: 0;
+                float:left;
+                background-color:tomato;
+            }
+            .next{
+                height: 10%;
+                width: 100px;
+                float:right;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                font-size: 20px;
+                border: none;
+                background: 0;
+                background-color:tomato;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- HEADER/TITLE/NAVIGATION-->
+        <div class="header">
+            <div class="titleB">
+                <p class="title">God's Will</p>
+            </div>
+            <div class="navigation">
+                <a href="Main.html"><button class="nav">Home</button></a>
+                <a href="encouragement.html"><button class="nav">Categories</button></a>
+                <a href="Contact.html"><button class="nav">Contact</button></a>
+                <a href="About.html"><button class="nav">About</button></a>
+            </div>
+        </div>
+            <!--Bible Verses-->
+        <div class="encouragement">
+            <p>ENCOURAGEMENT</p>
+        </div>
+        <div class="verses">
+            <p class="word">"God is our refuge and strength, a very present help in trouble." </p>
+            <p class="ref">Psalm 46:1</p>
+            <p class="word">"May the Lord give strength to his people! May the Lord bless his people with peace." </p>
+            <p class="ref">Psalm 29:11</p>
+            <p class="word">"I have said these things to you, that in me you may have peace. In the world you will have tribulation. But take heart; I have overcome the world.”</p>
+            <p class="ref"> John 16:33</p>
+            <p class="word">"But seek first the kingdom of God and his righteousness, and all these things will be added to you." </p>
+            <p class="ref">Matthew 6:33 </p>
+            <p class="word">"Therefore do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own."  </p>
+            <p class="ref">Matthew 6:34 </p>
+            <p class="word">"Rejoice in hope, be patient in tribulation, be constant in prayer."  </p>
+            <p class="ref">Romans 12:12 </p>
+            <p class="word">"But now, this is what the LORD says he who created you, Jacob, he who formed you, Israel: “Do not fear, for I have redeemed you; I have summoned you by name; you are mine."  </p>
+            <p class="ref">Isaiah 43:1 </p>
+            <p class="word">"I sought the LORD, and he answered me; he delivered me from all my fears."  </p> </p>
+            <p class="ref">Psalm 34:4 </p>
+            <p class="word">"When anxiety was great within me, your consolation brought me joy."  </p>
+            <p class="ref">Psalm 94:19 </p>
+            <p class="word">"Rejoice in the Lord always; again I will say, Rejoice."  </p>
+            <p class="ref">Philippians 4:4 </p>
+            
+        </div>
+            <!--BACK AND NEXT PAGE BUTTON-->
+        <div class="page">
+            <a href="strength.html"><button class="back">BACK</button></a>
+            <a href="forgiveness.html"><button class="next">NEXT</button></a>
+        </div>
+    </body>
+</html>

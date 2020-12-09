@@ -1,0 +1,188 @@
+<html>
+    <head>
+    <!--CCS Designs + Import Fonts From Font.google.com-->
+        <style>
+            
+            @font-face{
+                font-family: 'Major Mono Display';
+                src: url(MajorMonoDisplayRegular.ttf) format("truetype" );
+            }
+            @font-face{
+                font-family: 'Montserrat', sans-serif;
+
+                src: url(Montserrat-Black.ttf) format("truetype" );
+
+            }
+            @font-face{
+                font-family: 'Sansita Swashed', cursive;
+                src: url(Montserrat-Black.ttf) format("truetype" );
+            }
+            body{
+                margin:0;
+                padding:0;
+                background-image: url(preview.jpeg);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+            }
+            @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}}
+            
+            
+            .header{
+                width: 100%;
+                height: 10%;
+                background-color: pink;
+                box-shadow: 0px 1px 5px black
+            }
+            .titleB{
+                float:left;
+                width: 72%;
+                height: 100%;   
+            }
+            .title{
+                font-size: 50px;
+                padding: 1%;
+                margin:0;
+                text-align: center;
+                font-family: 'Major Mono Display';
+            }
+            .navigation{
+                float:right;
+                width: 28%;
+            }
+            a{
+                font-family: 'Courier New', Courier, monospace;
+                text-decoration: none;
+                color: black;
+            }
+            .nav{
+                height: 100%;
+                font-size: 20px;
+                border: none;
+                background: 0;
+            }
+            .nav:after{
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                transition: width .3s;
+
+            }
+            .nav:hover::after{
+                width: 100%;
+                transition: width .3s;
+            }
+            .main{
+                width: 100%;
+                height: 87%;
+            }
+            .faith{
+                Height: max-content;
+                width:100%;
+            }
+            .faith p{
+                font-size: 35px;
+                padding: 0;
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                
+            }
+            .word{
+                font-family: 'Sansita Swashed', cursive;
+                font-size: 50px;
+                padding-left: 98px;
+                padding-right: 98px;
+                text-align: center;
+            }
+            .ref{
+                font-size: 30px;
+                text-align: center;
+                font-weight:bold;
+                font-style: italic;
+                font-family: 'JetBrains Mono';
+            }
+                @font-face{
+                font-family: 'JetBrains Mono';
+                src: url(JetBrainsMono-VariableFont_wght.ttf) format("truetype" );
+            
+            }
+            .back{
+                height: 10%;
+                width: 100px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                font-size: 20px;
+                border: none;
+                background: 0;
+                float:left;
+                background-color:tomato;
+            }
+            .next{
+                height: 10%;
+                width: 100px;
+                float:right;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                font-size: 20px;
+                border: none;
+                background: 0;
+                background-color:tomato;
+            }
+        </style>
+    </head>
+    <body>
+         <!-- HEADER/TITLE/NAVIGATION-->
+        <div class="header">
+            <div class="titleB">
+                <p class="title">God's Will</p>
+            </div>
+            <div class="navigation">
+                <a href="Main.html"><button class="nav">Home</button></a>
+                <a href="faith.html"><button class="nav">Categories</button></a>
+                <a href="Contact.html"><button class="nav">Contact</button></a>
+                <a href="About.html"><button class="nav">About</button></a>
+            </div>
+        </div>
+          <!--Bible Verses-->
+        <div class="faith">
+            <p>FAITH</p>
+        </div>
+        <div class="verses">
+            <p class="word">“Therefore I tell you, whatever you ask for in prayer, believe that you have received it, and it will be yours.”</p>
+            <p class="ref">Mark 11:24</p>
+            <p class="word">“And without faith it is impossible to please God, because anyone who comes to him must believe that he exists and that he rewards those who earnestly seek him.” </p>
+            <p class="ref">Hebrews 11:6</p>
+            <p class="word">“Then Jesus told him, ‘Because you have seen me, you have believed; blessed are those who have not seen and yet have believed.”</p>
+            <p class="ref">John 20:29</p>
+            <p class="word">"Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths." </p>
+            <p class="ref">Proverbs 3:5-6 </p>
+            <p class="word">"Jesus said to him, 'If you can believe? All things are possible for one who believes."  </p>
+            <p class="ref">Mark 9:23 </p>
+            <p class="word">"Nothing is impossible with God."  </p>
+            <p class="ref">Luke 1:37 </p>
+            <p class="word">"And whatever you ask in prayer, you will receive, if you have faith."  </p>
+            <p class="ref">Matthew 21:22 </p>
+            <p class="word">"I can do all this through him who strengthens me."  </p> </p>
+            <p class="ref">Philippians 4:13 </p>
+            <p class="word">"Jesus said to them, 'I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst."  </p>
+            <p class="ref">John 6:35 </p>
+            <p class="word">"For we walk by faith, not by sight."  </p>
+            <p class="ref">2 Corinthians 5:7 </p>
+            
+        </div>
+        <!--BACK AND NEXT PAGE BUTTON-->
+        <div class="page">
+            <a href="love.html"><button class="back">BACK</button></a>
+            <a href="hope.html"><button class="next">NEXT</button></a>
+        </div>
+    </body>
+</html>

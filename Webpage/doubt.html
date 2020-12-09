@@ -1,0 +1,188 @@
+<html>
+    <head>
+    <!--CCS Designs + Import Fonts From Font.google.com-->
+        <style>
+            
+            @font-face{
+                font-family: 'Major Mono Display';
+                src: url(MajorMonoDisplayRegular.ttf) format("truetype" );
+            }
+            @font-face{
+                font-family: 'Montserrat', sans-serif;
+
+                src: url(Montserrat-Black.ttf) format("truetype" );
+
+            }
+            @font-face{
+                font-family: 'Sansita Swashed', cursive;
+                src: url(Montserrat-Black.ttf) format("truetype" );
+            }
+            body{
+                margin:0;
+                padding:0;
+                background-image: url(preview.jpeg);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+            }
+            @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}}
+            
+            
+            .header{
+                width: 100%;
+                height: 10%;
+                background-color: pink;
+                box-shadow: 0px 1px 5px black
+            }
+            .titleB{
+                float:left;
+                width: 72%;
+                height: 100%;   
+            }
+            .title{
+                font-size: 50px;
+                padding: 1%;
+                margin:0;
+                text-align: center;
+                font-family: 'Major Mono Display';
+            }
+            .navigation{
+                float:right;
+                width: 28%;
+            }
+            a{
+                font-family: 'Courier New', Courier, monospace;
+                text-decoration: none;
+                color: black;
+            }
+            .nav{
+                height: 100%;
+                font-size: 20px;
+                border: none;
+                background: 0;
+            }
+            .nav:after{
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                transition: width .3s;
+
+            }
+            .nav:hover::after{
+                width: 100%;
+                transition: width .3s;
+            }
+            .main{
+                width: 100%;
+                height: 87%;
+            }
+            .doubt{
+                Height: max-content;
+                width:100%;
+            }
+            .doubt p{
+                font-size: 35px;
+                padding: 0;
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                
+            }
+            .word{
+                font-family: 'Sansita Swashed', cursive;
+                font-size: 50px;
+                padding-left: 98px;
+                padding-right: 98px;
+                text-align: center;
+            }
+            .ref{
+                font-size: 30px;
+                text-align: center;
+                font-weight:bold;
+                font-style: italic;
+                font-family: 'JetBrains Mono';
+            }
+                @font-face{
+                font-family: 'JetBrains Mono';
+                src: url(JetBrainsMono-VariableFont_wght.ttf) format("truetype" );
+            
+            }
+            .back{
+                height: 10%;
+                width: 100px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                font-size: 20px;
+                border: none;
+                background: 0;
+                float:left;
+                background-color:tomato;
+            }
+            .next{
+                height: 10%;
+                width: 100px;
+                float:right;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                font-size: 20px;
+                border: none;
+                background: 0;
+                background-color:tomato;
+            }
+        </style>
+    </head>
+    <body>
+    <!-- HEADER/TITLE/NAVIGATION-->
+        <div class="header">
+            <div class="titleB">
+                <p class="title">God's Will</p>
+            </div>
+            <div class="navigation">
+                <a href="Main.html"><button class="nav">Home</button></a>
+                <a href="doubt.html"><button class="nav">Categories</button></a>
+                <a href="Contact.html"><button class="nav">Contact</button></a>
+                <a href="About.html"><button class="nav">About</button></a>
+            </div>
+        </div>
+            <!--Bible Verses-->
+        <div class="doubt">
+            <p>DOUBT</p>
+        </div>
+        <div class="verses">
+            <p class="word">“Don’t worry about anything, instead, pray about everything. Tell God what you need, and thank Him for all He has done. Then you will experience God’s peace, which exceeds anything we can understand. His peace will guard your hearts and minds as you live in Christ Jesus.”</p>
+            <p class="ref">Philippians 4:6-7</p>
+            <p class="word">“God is within her, she will not fall.”</p>
+            <p class="ref">Psalm 46:5</p>
+            <p class="word">“For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future.”</p>
+            <p class="ref">Jeremiah 29:11</p>
+            <p class="word">“The Lord will fight for you, you need only to be still.”</p>
+            <p class="ref">Exodus 14:14  </p>
+            <p class="word"> “I will never leave you nor forsake you.” </p>
+            <p class="ref">Joshua 1:5   </p>
+            <p class="word">“Take delight in the Lord, and he will give you the desires of your heart.” </p>
+            <p class="ref">Psalms 37:4 </p>
+            <p class="word">“Finally, be strong in the Lord and in the strength of his might.” </p>
+            <p class="ref">Ephesians 6:10  </p>
+            <p class="word">“You keep him in perfect peace whose mind is stayed on you, because he trusts in you.” </p> </p>
+            <p class="ref">Isaiah 26:3 </p>
+            <p class="word">“So God created man in his own image, in the image of God he created him; male and female he created them.” </p>
+            <p class="ref">Genesis 1:27 </p>
+            <p class="word">“For in Christ Jesus you are all sons of God, through faith.” </p>
+            <p class="ref">Galatians 3:26 </p>
+            
+        </div>
+        <!--BACK AND NEXT PAGE BUTTON-->
+        <div class="page">
+            <a href="friendship.html"><button class="back">BACK</button></a>
+            <a href="leadership.html"><button class="next">NEXT</button></a>
+        </div>
+    </body>
+</html>

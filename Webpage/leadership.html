@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <!--CCS Designs + Import Fonts From Font.google.com-->
+        <style>
+            
+            @font-face{
+                font-family: 'Major Mono Display';
+                src: url(MajorMonoDisplayRegular.ttf) format("truetype" );
+            }
+            @font-face{
+                font-family: 'Montserrat', sans-serif;
+
+                src: url(Montserrat-Black.ttf) format("truetype" );
+
+            }
+            @font-face{
+                font-family: 'Sansita Swashed', cursive;
+                src: url(Montserrat-Black.ttf) format("truetype" );
+            }
+            body{
+                margin:0;
+                padding:0;
+                background-image: url(preview.jpeg);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+            }
+            @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}}
+            
+            
+            .header{
+                width: 100%;
+                height: 10%;
+                background-color: pink;
+                box-shadow: 0px 1px 5px black
+            }
+            .titleB{
+                float:left;
+                width: 72%;
+                height: 100%;   
+            }
+            .title{
+                font-size: 50px;
+                padding: 1%;
+                margin:0;
+                text-align: center;
+                font-family: 'Major Mono Display';
+            }
+            .navigation{
+                float:right;
+                width: 28%;
+            }
+            a{
+                font-family: 'Courier New', Courier, monospace;
+                text-decoration: none;
+                color: black;
+            }
+            .nav{
+                height: 100%;
+                font-size: 20px;
+                border: none;
+                background: 0;
+            }
+            .nav:after{
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                transition: width .3s;
+
+            }
+            .nav:hover::after{
+                width: 100%;
+                transition: width .3s;
+            }
+            .main{
+                width: 100%;
+                height: 87%;
+            }
+            .leadership{
+                Height: max-content;
+                width:100%;
+            }
+            .leadership p{
+                font-size: 35px;
+                padding: 0;
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                
+            }
+            .word{
+                font-family: 'Sansita Swashed', cursive;
+                font-size: 50px;
+                padding-left: 98px;
+                padding-right: 98px;
+                text-align: center;
+            }
+            .ref{
+                font-size: 30px;
+                text-align: center;
+                font-weight:bold;
+                font-style: italic;
+                font-family: 'JetBrains Mono';
+            }
+                @font-face{
+                font-family: 'JetBrains Mono';
+                src: url(JetBrainsMono-VariableFont_wght.ttf) format("truetype" );
+            
+            }
+            .back{
+                height: 10%;
+                width: 100px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                font-size: 20px;
+                border: none;
+                background: 0;
+                float:left;
+                background-color:tomato;
+            }
+            .next{
+                height: 10%;
+                width: 100px;
+                float:right;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                font-size: 20px;
+                border: none;
+                background: 0;
+                background-color:tomato;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- HEADER/TITLE/NAVIGATION-->
+        <div class="header">
+            <div class="titleB">
+                <p class="title">God's Will</p>
+            </div>
+            <div class="navigation">
+                <a href="Main.html"><button class="nav">Home</button></a>
+                <a href="leadership.html"><button class="nav">Categories</button></a>
+                <a href="Contact.html"><button class="nav">Contact</button></a>
+                <a href="About.html"><button class="nav">About</button></a>
+            </div>
+        </div>
+        <!--Bible Verses-->
+        <div class="Leadership">
+            <p>LEADERSHIP</p>
+        </div>
+        <div class="verses">
+            <p class="word">“But among you it will be different. Whoever wants to be a leader among you must be your servant.” </p>
+            <p class="ref">Matthew 20:26</p>
+            <p class="word">“A fool vents all his feelings, But a wise man holds them back.”</p>
+            <p class="ref">Proverbs 29:11</p>
+            <p class="word">“But it is not this way with you, but the one who is the greatest among you must become like the youngest, and the leader like the servant.”</p>
+            <p class="ref">Luke 22:26</p>
+            <p class="word">“Whatever your hand finds to do, do it with your might; for there is no work or device or knowledge or wisdom in the grave where you are going.”</p>
+            <p class="ref">Ecclesiastes 9:10 </p>
+            <p class="word">“Do not speak in the hearing of a fool, For he will despise the wisdom of your words.” </p>
+            <p class="ref">Proverbs 23:9 </p>
+            <p class="word">“Pay careful attention to yourselves and to all the flock, in which the Holy Spirit has made you overseers, to care for the church of God, which he obtained with his own blood.” </p>
+            <p class="ref">Acts 20:28 </p>
+            <p class="word">“Fear not, for I am with you; Be not dismayed, for I am your God. I will strengthen you, Yes, I will help you, I will uphold you with My righteous right hand.” </p>
+            <p class="ref">Isaiah 41:10 </p>
+            <p class="word">“Let us not become weary in doing good, for at the proper time we will reap a harvest if we do not give up.” </p> </p>
+            <p class="ref">Galatians 6:9 </p>
+            <p class="word">“Whoever loves instruction loves knowledge, But he who hates correction is stupid.” </p>
+            <p class="ref">Proverbs 12:1 </p>
+            <p class="word">“Be diligent to know the state of your flocks, And attend to your herds;” </p>
+            <p class="ref">Proverbs 27:23 </p>
+            
+        </div>
+        <!--BACK AND NEXT PAGE BUTTON-->
+        <div class="page">
+            <a href="doubt.html"><button class="back">BACK</button></a>
+            <a href="strength.html"><button class="next">NEXT</button></a>
+        </div>
+    </body>
+</html>
